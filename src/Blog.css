@@ -1,0 +1,17 @@
+.blog-Div{
+    min-height: calc(100vh-400px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center ;
+    gap: 20px;
+    padding-block:100px ;
+}

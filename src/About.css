@@ -1,0 +1,83 @@
+.about-div {
+    min-height: calc(100vh-400px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.about-Pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding-block: 50px;
+}
+
+.aboutUs {
+    background-color: #EEF0E5;
+    text-align: center;
+    font-family: "Signika", sans-serif;
+    font-size: 45px;
+    color: #347758;
+    width: 100%;
+    padding-block: 60px;
+}
+
+.aboutTitle {
+    color: rgb(52, 119, 88);
+    font-size: 42px;
+    font-family: "Signika", sans-serif;
+    padding-bottom: 30px;
+}
+
+.aboutParagraph {
+    color: #666666;
+    font: 15px "Poppins", sans-serif;
+    width: 500px;
+    padding-bottom: 30px;
+}
+
+.farmers {
+    width: 80%;
+    text-align: center;
+    padding-block: 50px;
+}
+
+.farmerTeam {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(220, 220, 220, 0.938);
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    height: 420px;
+}
+
+.teamImg {
+    border-radius: 50%;
+    width: 200px;
+    padding-bottom: 20px;
+}
+.farmerName{
+    font-size: 24px;
+    color: rgb(52, 119, 88);
+    font-family: "Signika" ,sans-serif;
+    padding-bottom: 20px;
+}
+.farmerWork{
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    font-family: "Signika" ,sans-serif;
+}
