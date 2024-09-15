@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Shop.css";
 import Apple from "./images/apple.png";
 import Brocoli from "./images/broccoli--300x300.png";
@@ -17,8 +18,9 @@ import Kiwi from "./images/kiwi-300x300.png";
 import Orange from "./images/orange-300x300.png";
 
 
-
 function Shop({ toggleCartItem, cart }) {
+    const [sortOption, setSortOption] = useState("menu_order");
+
     let products = [
         { id: 1, name: "Apple", price: 45.21, salePrice: 21.85, image: Apple },
         { id: 2, name: "Broccoli", price: 44.85, salePrice: 39.49, image: Brocoli },
@@ -37,6 +39,30 @@ function Shop({ toggleCartItem, cart }) {
         { id: 15, name: "Onion", price: 42.95, salePrice: 32.14, image: Onion },
         { id: 16, name: "Orange", price: 39.14, salePrice: 19.25, image: Orange },
     ];
+
+    const sortProducts = (products, option) => {
+        switch (option) {
+            case "popularity":
+                return products.slice().sort((a, b) => b.popularity - a.popularity);
+            case "rating":
+                return products.slice().sort((a, b) => b.rating - a.rating);
+            case "date":
+                return products.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+            case "price":
+                return products.slice().sort((a, b) => a.salePrice - b.salePrice);
+            case "price-desc":
+                return products.slice().sort((a, b) => b.salePrice - a.salePrice);
+            default:
+                return products;
+        }
+    };
+
+    const handleSortChange = (event) => {
+        setSortOption(event.target.value);
+    };
+
+    const sortedProducts = sortProducts(products, sortOption);
+
     return (
         <div className="shop-div">
             <div className="shop">
@@ -47,7 +73,7 @@ function Shop({ toggleCartItem, cart }) {
                     <p className="shop-paragraph">Showing all results</p>
                 </div>
                 <form>
-                    <select name="orderby" className="orderby" aria-label="Shop order" defaultValue="menu_order">
+                    <select name="orderby" className="orderby" aria-label="Shop order" value={sortOption} onChange={handleSortChange}>
                         <option value="menu_order">Default sorting</option>
                         <option value="popularity">Sort by popularity</option>
                         <option value="rating">Sort by average rating</option>
@@ -58,15 +84,15 @@ function Shop({ toggleCartItem, cart }) {
                 </form>
             </div>
             <div className="shop-card">
-                {products.map(product => (
-                    <div className="shopping-Products" key={product.name}>
+                {sortedProducts.map(product => (
+                    <div className="shopping-Products" key={product.id}>
                         <div><p className="sale">Sale!</p></div>
                         <div className="best-product">
                             <img src={product.image} alt={product.name} style={{ width: '300px' }} />
                             <h3>{product.name}</h3>
                             <h3 className="prices">
-                                <span className="price">${product.price?.original?.toFixed(2) || '0.00'}</span>
-                                ${product.price?.discounted?.toFixed(2) || '0.00'}
+                                <span className="price">${product.price.toFixed(2)}</span>
+                                ${product.salePrice.toFixed(2)}
                             </h3>
                             <button
                                 className="orange"

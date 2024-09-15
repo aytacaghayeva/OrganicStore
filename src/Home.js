@@ -34,14 +34,14 @@ function Home({ toggleCartItem, cart }) {
   return (
     <div className="home">
       <div className="rich-flavour">
-        <div>
-          <img src={Vegetables} alt="vegetables" className="vegetable"></img>
-        </div>
         <div className="nature">
           <img src={Natural} alt="natural"></img>
           <h2 className="rich">Rich Flavours Fresh From The Farm</h2>
           <p className="home-p">We supply high-quality organic food</p>
           <Link to="/shop" className="orange">Shop now</Link>
+        </div>
+        <div>
+          <img src={Vegetables} alt="vegetables" className="vegetable"></img>
         </div>
       </div>
       <div className="categories">
@@ -102,28 +102,35 @@ function Home({ toggleCartItem, cart }) {
         </div>
       </div>
       <div className="features-container">
-        <h1 className="category-title">Welcome To Organic Store</h1>
+        <div>
+          <h1 className="category-title">Welcome To Organic Store</h1>
+        </div>
         <div className="features">
-          <div className="feature first">
-            <img src={FamilyHealthy} alt="Family Healthy" className="feature-img" />
-            <h3 className="feature-title">Family Healthy</h3>
-            <p className="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div className="featureFirst">
+            <div className="feature first">
+              <img src={FamilyHealthy} alt="Family Healthy" className="feature-img" />
+              <h3 className="feature-title">Family Healthy</h3>
+              <p className="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div className="feature">
+              <img src={AlwaysFresh} alt="Always Fresh" className="feature-img" />
+              <h3 className="feature-title">Always Fresh</h3>
+              <p className="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
-          <div className="feature">
-            <img src={AlwaysFresh} alt="Always Fresh" className="feature-img" />
-            <h3 className="feature-title">Always Fresh</h3>
-            <p className="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div className="featureSecond">
+            <div className="feature" >
+              <img src={FoodSafety} alt="Food Safety" className="feature-img" />
+              <h3 className="feature-title">Food Safety</h3>
+              <p className="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div className="feature first">
+              <img src={Organic} alt="100% Organic" className="feature-img" />
+              <h3 className="feature-title">100% Organic</h3>
+              <p className="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
-          <div className="feature" >
-            <img src={FoodSafety} alt="Food Safety" className="feature-img" />
-            <h3 className="feature-title">Food Safety</h3>
-            <p className="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div className="feature first">
-            <img src={Organic} alt="100% Organic" className="feature-img" />
-            <h3 className="feature-title">100% Organic</h3>
-            <p className="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
+
         </div>
         <div className="image-container">
           <img src={MainOrganic} alt="" className="main-image" />
@@ -133,7 +140,7 @@ function Home({ toggleCartItem, cart }) {
         <div className="newsletter-box">
           <div className="subscribe-section">
             <div className="subscribe-text">
-              <h2 className="subscribeTitle">Subscribe To Our Newsletter And Get Daily Offers</h2>
+              <h2 className="subscribeTitle">Subscribe To Our Newsletter <br></br>And Get Daily Offers</h2>
               <form className="email-box">
                 <input type="email" placeholder="Enter your email" className="emailInput" required />
                 <button className="orange">Send</button>

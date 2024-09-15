@@ -21,7 +21,7 @@ function Contact() {
                                 <div>
                                     <h3 className="anytown">Anytown ST 1</h3>
                                 </div>
-                                <div style={{ display: 'flex' }}>
+                                <div style={{ display: 'flex'}} className="titlePart">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#347758', fontSize: "22px", marginRight: '7px' }} />
                                     <h3 className="town-title">123, Main street,<br></br>Anytown ST 12345.</h3>
                                 </div>
@@ -30,7 +30,7 @@ function Contact() {
                                 <div>
                                     <h3 className="anytown">Contact Information</h3>
                                 </div>
-                                <div style={{ display: 'flex' }}>
+                                <div style={{ display: 'flex' }} className="titlePart">
                                     <FontAwesomeIcon icon={faEnvelope} style={{ color: '#347758', fontSize: "22px", marginRight: '7px' }} />
                                     <h3 className="town-title">hello@example.com<br></br>mail@example.com</h3>
                                 </div>
@@ -39,9 +39,9 @@ function Contact() {
                         <div className="streets">
                             <div className="town">
                                 <div>
-                                    <h3 className="anytown">Anytown ST 1</h3>
+                                    <h3 className="anytown">Anytown ST 2</h3>
                                 </div>
-                                <div style={{ display: 'flex' }}>
+                                <div style={{ display: 'flex' }} className="titlePart">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#347758', fontSize: "22px", marginRight: '7px' }} />
                                     <h3 className="town-title">456, Main street,<br></br>Anytown ST 12345.</h3>
                                 </div>
@@ -50,14 +50,13 @@ function Contact() {
                                 <div>
                                     <h3 className="anytown">Our Business Hours</h3>
                                 </div>
-                                <div style={{ display: 'flex' }}>
+                                <div style={{ display: 'flex' }} className="titlePart">
                                     <FontAwesomeIcon icon={faClock} style={{ color: '#347758', fontSize: "22px", marginRight: '7px' }} />
                                     <h3 className="town-title">Monday - Friday: 8am - 4pm<br></br>Saturday - Sunday: 9am - 5pm</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div className="sendMessage">
                     <h2 className="contact-title" style={{ paddingBottom: '40px' }}>Leave Us A Message</h2>
@@ -70,7 +69,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-            <div style={{ width: '100%', height: '450px' }}>
+            <div style={{ width: '100%', height: '450px' }} className="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96778.51111329655!2d-74.002549!3d40.710785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York!5e0!3m2!1str!2sus!4v1726244155616!5m2!1str!2sus"
                     width="100%"

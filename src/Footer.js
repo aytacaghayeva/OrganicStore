@@ -29,7 +29,7 @@ function Footer() {
           <FontAwesomeIcon icon={faPinterestP} style={{ color: 'orange' }} className="socialMedia" />
         </div>
       </div>
-      <div>
+      <div className="footerHeader">
         <h3 className="footHeader">Information</h3>
         <div className="footList">
           <p className="headList">About Us</p>
@@ -40,7 +40,7 @@ function Footer() {
           <p className="headList">Our Sitemap</p>
         </div>
       </div>
-      <div>
+      <div className="footerHeader">
         <h3 className="footHeader">Services</h3>
         <div className="footList">
           <p className="headList">Privacy Policy</p>
@@ -51,7 +51,7 @@ function Footer() {
           <p className="headList">Saved Cards</p>
         </div>
       </div>
-      <div>
+      <div className="footerHeader">
         <h3 className="footHeader">Newsletter</h3>
         <p className="subscribe">Subscribe to our mailing list to get the new updates!</p>
         <form>

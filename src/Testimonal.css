@@ -37,13 +37,35 @@
     color: #347758;
     font-family: "Signika", Sans-serif;
     font-size: 19px;
+    padding-bottom: 20px;
 }
 
 .slick-dots li button:before {
-    color: #f9a826 !important;  
+    color: #f9a826 !important;
     font-size: 12px !important;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #347758 !important; 
+    color: #347758 !important;
+}
+
+
+@media (max-width: 800px) {
+    .test-text {
+        width: 100% !important;
+
+    }
+    .testimonal-paragraph {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 1500px) {
+    .test-text {
+        width: 80% !important;
+
+    }
+    .testimonal-paragraph {
+        font-size: 20px !important;
+    }
 }
