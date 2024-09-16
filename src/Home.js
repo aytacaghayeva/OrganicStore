@@ -35,7 +35,7 @@ function Home({ toggleCartItem, cart }) {
     <div className="home">
       <div className="rich-flavour">
         <div className="nature">
-          <img src={Natural} alt="natural"></img>
+          <img src={Natural} alt="natural" className="natural"></img>
           <h2 className="rich">Rich Flavours Fresh From The Farm</h2>
           <p className="home-p">We supply high-quality organic food</p>
           <Link to="/shop" className="orange">Shop now</Link>
