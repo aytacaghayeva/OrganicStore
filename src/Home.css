@@ -324,7 +324,7 @@
    
 }
 .blogCard{
-    padding-block: 10px;
+    padding-bottom: 10px;
     border: 1px solid lightgray;
     border-radius: 20px;
     width: 450px;
@@ -349,6 +349,27 @@
     padding: 20px;
 }
 
+@media(min-width:300px){
+    .add-texts{
+        text-align: center !important;
+    }
+    .getUp{
+        font-size: 30px !important;
+    }
+    .weekend{
+        font-size: 30px !important;
+    }
+}
+
+@media(min-width:768px){
+    .cta-section{
+        width: 65% !important;
+    }
+    .subscribe-section{
+        width: 65% !important;
+    }
+}
+
 @media (max-width: 800px) {
     .rich-flavour, .nature{
         width: 100%;
@@ -358,8 +379,8 @@
         flex-direction: column;
     }
     .vegetable{
-        width: 400px;
-        height: 400px;
+        width: 90vw;
+        height: 50vh;
     }
     .rich{
         width: 90%;
@@ -426,6 +447,27 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .blogCard{
+        width: 90%;
+    }
+    .blogImg{
+        width: 100%;
+    }
+    .cta-section{
+        width: 100%;
+        padding-inline: 5px;
+    }
+    .cta-title{
+        width: 100%;
+        font-size: 30px;
+        text-align: start;
+    }
+    .subscribeTitle{
+        font-size: 30px;
+    }
+    .break-text{
+        display: block;
     }
 
 }

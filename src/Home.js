@@ -148,7 +148,7 @@ function Home({ toggleCartItem, cart }) {
             </div>
           </div>
           <div className="cta-section">
-            <h2 className="cta-title">Choose The Healthier Way Of Life</h2>
+            <h2 className="cta-title">Choose The Healthier <span className="break-text">Way Of Life</span></h2>
             <p>Return To Purity</p>
           </div>
         </div>
