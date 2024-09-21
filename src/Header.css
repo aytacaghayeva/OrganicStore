@@ -9,8 +9,8 @@
     background-color: white;
 }
 
-.logo img {
-    max-width: 60%;
+.logoImg{
+    max-width: 50%;
     padding-left: 30px;
 }
 .rightHeader{
@@ -91,12 +91,14 @@
     color: #347758;
     font-weight: bold;
 }
+
+
 @media (max-width: 1500px) {
     .list {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 100px !important;
         right: 0;
         width: 100%;
         background-color: white;
@@ -127,6 +129,9 @@
         font-size: 24px;
         cursor: pointer;
     }
+    .shopping-bag-main , .hamburger{
+        margin-bottom: 20px;
+   }
 }
 
 
@@ -135,7 +140,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 75px;
+        top: 75px !important;
         right: 0;
         width: 100%;
         background-color: white;
@@ -165,6 +170,10 @@
         display: block;
         font-size: 24px;
         cursor: pointer;
+       
+    }
+    .shopping-bag-main , .hamburger{
+         margin-bottom: 5px;
     }
 }
 
