@@ -43,7 +43,7 @@ function About() {
             </div>
             <div className="about-Pic">
                 <div>
-                    <img src={AboutPicture} alt="" style={{ width: '400px', height: "500px" }}></img>
+                    <img src={AboutPicture} alt="" style={{ width: '400px', height: "500px" }} className="pictureAbout"></img>
                 </div>
                 <div className="aboutTXT">
                     <h2 className="aboutTitle">What We Stand For</h2>

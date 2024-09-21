@@ -7,7 +7,6 @@
     padding-block: 15px;
     padding-inline: 30px;
     background-color: white;
-
 }
 
 .logo img {
@@ -92,7 +91,6 @@
     color: #347758;
     font-weight: bold;
 }
-
 @media (max-width: 1500px) {
     .list {
         display: none;
@@ -102,7 +100,8 @@
         right: 0;
         width: 100%;
         background-color: white;
-        padding: 20px;
+        padding-inline: 20px;
+        padding-block: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -129,3 +128,44 @@
         cursor: pointer;
     }
 }
+
+
+@media (max-width: 500px) {
+    .list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        padding-inline: 20px;
+        padding-block: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .link:hover::after,
+    .active-link::after {
+        width: 0;
+    }
+    .link{
+        font-size: 15px;
+    }
+    .list.show-menu {
+        display: flex;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+

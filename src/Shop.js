@@ -79,7 +79,7 @@ function Shop({ toggleCartItem, cart }) {
           <div className="shopping-Products" key={product.id}>
             <div><p className="sale">Sale!</p></div>
             <div className="best-product">
-              <img src={product.image} alt={product.name} style={{ width: '300px' }} />
+              <img src={product.image} alt={product.name} style={{ width: '300px' }} className='shopPic'/>
               <h3>{product.name}</h3>
               <h3 className="prices">
                 <span className="price">${product.price.toFixed(2)}</span>

@@ -113,7 +113,17 @@
 }
 
 
-@media(max-width:800px){
+@media(min-width:300px){
+    .pictureAbout{
+        width: 90% !important;
+        height: 20% !important;
+    }
+    .number-stats{
+        text-align: center;
+    }
+}
+
+@media(max-width:750px){
     .about-Pic{
         display: flex;
         flex-direction: column-reverse;

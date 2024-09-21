@@ -42,20 +42,50 @@
 
 .shop-card {
     display: flex;
-    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90% !important;
 }
 
 .shopping-Products {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 300px !important;
     height: 500px;
     padding-top: 20px;
     padding-bottom: 40px;
     border: 1px solid whitesmoke;
     background-color: white;
     cursor: pointer;
+}
+
+
+@media(max-width:890px){
+
+    .shopping-Products{
+        width: 100%;
+    }
+    .shop-card{
+        width: 100% !important;
+    }
+    .shopPic{
+        width: 220px !important;
+    }
+}
+
+
+
+@media(min-width:1000px){
+    .shop-div{
+        width: 100%;
+    }
+    .shopping-Products{
+        width: 80%;
+    }
+    .shop-card{
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
