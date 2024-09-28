@@ -94,7 +94,6 @@
 
 @media (max-width:1500px){
     .footer{
-        display: flex;
         flex-direction: column;
     }
     .footerHeader{

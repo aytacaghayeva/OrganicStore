@@ -379,8 +379,8 @@
         flex-direction: column;
     }
     .vegetable{
-        width: 90vw;
-        height: 50vh;
+        width: 100% !important;
+        height: auto;
     }
     .rich{
         width: 90%;

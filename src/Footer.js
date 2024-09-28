@@ -58,7 +58,6 @@ function Footer() {
           <input placeholder="Enter your email" className="email" required></input>
           <button className="sendBtn">Send</button>
         </form>
-
       </div>
     </div>
   )
